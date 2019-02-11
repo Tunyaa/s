@@ -1,0 +1,10 @@
+C:\Users\oldca\source\repos\Buttons\Buttons\bin\Debug\Buttons.exe.config
+C:\Users\oldca\source\repos\Buttons\Buttons\bin\Debug\Buttons.exe
+C:\Users\oldca\source\repos\Buttons\Buttons\bin\Debug\Buttons.pdb
+C:\Users\oldca\source\repos\Buttons\Buttons\bin\Debug\WebDriver.dll
+C:\Users\oldca\source\repos\Buttons\Buttons\bin\Debug\WebDriver.xml
+C:\Users\oldca\source\repos\Buttons\Buttons\obj\Debug\Buttons.csprojAssemblyReference.cache
+C:\Users\oldca\source\repos\Buttons\Buttons\obj\Debug\Buttons.csproj.CoreCompileInputs.cache
+C:\Users\oldca\source\repos\Buttons\Buttons\obj\Debug\Buttons.csproj.CopyComplete
+C:\Users\oldca\source\repos\Buttons\Buttons\obj\Debug\Buttons.exe
+C:\Users\oldca\source\repos\Buttons\Buttons\obj\Debug\Buttons.pdb
