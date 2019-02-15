@@ -1,0 +1,15 @@
+C:\Users\oldca\source\repos\PageObject\PageObject\bin\Debug\PageObject.exe.config
+C:\Users\oldca\source\repos\PageObject\PageObject\bin\Debug\PageObject.exe
+C:\Users\oldca\source\repos\PageObject\PageObject\bin\Debug\PageObject.pdb
+C:\Users\oldca\source\repos\PageObject\PageObject\bin\Debug\nunit.framework.dll
+C:\Users\oldca\source\repos\PageObject\PageObject\bin\Debug\WebDriver.dll
+C:\Users\oldca\source\repos\PageObject\PageObject\bin\Debug\WebDriver.Support.dll
+C:\Users\oldca\source\repos\PageObject\PageObject\bin\Debug\nunit.framework.pdb
+C:\Users\oldca\source\repos\PageObject\PageObject\bin\Debug\nunit.framework.xml
+C:\Users\oldca\source\repos\PageObject\PageObject\bin\Debug\WebDriver.xml
+C:\Users\oldca\source\repos\PageObject\PageObject\bin\Debug\WebDriver.Support.xml
+C:\Users\oldca\source\repos\PageObject\PageObject\obj\Debug\PageObject.csprojAssemblyReference.cache
+C:\Users\oldca\source\repos\PageObject\PageObject\obj\Debug\PageObject.csproj.CoreCompileInputs.cache
+C:\Users\oldca\source\repos\PageObject\PageObject\obj\Debug\PageObject.csproj.CopyComplete
+C:\Users\oldca\source\repos\PageObject\PageObject\obj\Debug\PageObject.exe
+C:\Users\oldca\source\repos\PageObject\PageObject\obj\Debug\PageObject.pdb
