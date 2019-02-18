@@ -1,0 +1,15 @@
+C:\Users\oldca\source\repos\nikonCanon\nikonCanon\bin\Debug\nikonCanon.exe.config
+C:\Users\oldca\source\repos\nikonCanon\nikonCanon\bin\Debug\nikonCanon.exe
+C:\Users\oldca\source\repos\nikonCanon\nikonCanon\bin\Debug\nikonCanon.pdb
+C:\Users\oldca\source\repos\nikonCanon\nikonCanon\bin\Debug\nunit.framework.dll
+C:\Users\oldca\source\repos\nikonCanon\nikonCanon\bin\Debug\WebDriver.dll
+C:\Users\oldca\source\repos\nikonCanon\nikonCanon\bin\Debug\WebDriver.Support.dll
+C:\Users\oldca\source\repos\nikonCanon\nikonCanon\bin\Debug\nunit.framework.pdb
+C:\Users\oldca\source\repos\nikonCanon\nikonCanon\bin\Debug\nunit.framework.xml
+C:\Users\oldca\source\repos\nikonCanon\nikonCanon\bin\Debug\WebDriver.xml
+C:\Users\oldca\source\repos\nikonCanon\nikonCanon\bin\Debug\WebDriver.Support.xml
+C:\Users\oldca\source\repos\nikonCanon\nikonCanon\obj\Debug\nikonCanon.csprojAssemblyReference.cache
+C:\Users\oldca\source\repos\nikonCanon\nikonCanon\obj\Debug\nikonCanon.csproj.CoreCompileInputs.cache
+C:\Users\oldca\source\repos\nikonCanon\nikonCanon\obj\Debug\nikonCanon.csproj.CopyComplete
+C:\Users\oldca\source\repos\nikonCanon\nikonCanon\obj\Debug\nikonCanon.exe
+C:\Users\oldca\source\repos\nikonCanon\nikonCanon\obj\Debug\nikonCanon.pdb
