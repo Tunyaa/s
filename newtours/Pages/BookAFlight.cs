@@ -83,6 +83,17 @@ namespace newtours.Pages
 
         [FindsBy(How = How.Name, Using = "buyFlights")]
         public IWebElement continueB { get; set; }
-        
+
+        [FindsBy(How = How.XPath, Using = "//*[@class='frame_header_info']/b")]
+        public IList<IWebElement> depTo { get; set; }
+
+        [FindsBy(How = How.ClassName, Using = "data_left")]//1/2/4\ pas6\tax8\pric10
+        public IList<IWebElement> flightTable { get; set; }
+
+        [FindsBy(How = How.ClassName, Using = "data_center_mono")]
+        public IList<IWebElement> classTable { get; set; }
+
+        [FindsBy(How = How.ClassName, Using = "data_center")]
+        public IList<IWebElement> priceTable { get; set; }
     }
 }

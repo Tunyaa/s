@@ -10,18 +10,25 @@ using OpenQA.Selenium.Support.UI;
 using newtours.Inputs;
 using newtours.Pages;
 using NUnit.Framework;
+using newtours.Tests;
+
 namespace newtours.Web
 {
     class Driver
     {
+        
         IWebDriver driver;
         UInputs uInputs = new UInputs();
+        TestsInp test = new TestsInp();
         SelectElement select;
+
+
         
         public void Chrome()
         {
            driver = new ChromeDriver();
         }
+        
         public void ChromeUrl()
         {
             driver.Url = uInputs.url;
@@ -29,6 +36,7 @@ namespace newtours.Web
         
         public void Login()
         {
+            
             var loginPage = new LoginPage();
             PageFactory.InitElements(driver, loginPage);
             loginPage.userNameField.Clear();
@@ -37,11 +45,12 @@ namespace newtours.Web
             loginPage.passwordField.SendKeys(uInputs.password);
             loginPage.signIn.Click();
         }
+        
         public void FlightFinder()
         {
-            
             var flightFinder = new FlightFinderPage();
             PageFactory.InitElements(driver, flightFinder);
+            Assert.AreEqual(driver.Title, test.findTitle);
             flightFinder.type.ElementAt(uInputs.type).Click();
             SelectByText(flightFinder.passengers, uInputs.passengers);
             SelectByText(flightFinder.departFrom, uInputs.departFrom);
@@ -58,14 +67,34 @@ namespace newtours.Web
         {
             var flightSelect = new SelectFlight();
             PageFactory.InitElements(driver, flightSelect);
+            Assert.AreEqual(driver.Title, test.selectTitle);
+            Assert.AreEqual(flightSelect.departTo.Text, test.selectDep);
+            Assert.AreEqual(flightSelect.DepatrDate.Text, test.selectDepDate);
+            Assert.AreEqual(flightSelect.returnTo.Text, test.selectRet);
+            Assert.AreEqual(flightSelect.returnDate.Text, test.selectRetDate);
             flightSelect.flightOut.ElementAt(uInputs.flightOut).Click();
             flightSelect.flightIn.ElementAt(uInputs.flightIn).Click();
             flightSelect.continueB.Click();
         }
+        
         public void BookAFlight()
         {
             var bookAFlight = new BookAFlight();
             PageFactory.InitElements(driver, bookAFlight);
+            Assert.AreEqual(driver.Title, test.bookTitle);
+            Assert.AreEqual(bookAFlight.depTo.ElementAt(0).Text, test.bookDep);
+            Assert.AreEqual(bookAFlight.depTo.ElementAt(1).Text, test.bookDepDate);
+            Assert.AreEqual(bookAFlight.flightTable.ElementAt(0).Text, test.bookDepFlight);
+            Assert.AreEqual(bookAFlight.classTable.ElementAt(0).Text, test.bookDepClass);
+            Assert.AreEqual(bookAFlight.priceTable.ElementAt(0).Text, test.bookDepPrice);
+            Assert.AreEqual(bookAFlight.flightTable.ElementAt(1).Text, test.bookRet);
+            Assert.AreEqual(bookAFlight.classTable.ElementAt(1).Text, test.bookRetDate);
+            Assert.AreEqual(bookAFlight.flightTable.ElementAt(3).Text, test.bookRetFlight);
+            Assert.AreEqual(bookAFlight.classTable.ElementAt(3).Text, test.bookRetClass);
+            Assert.AreEqual(bookAFlight.priceTable.ElementAt(2).Text, test.bookRetPrice);
+            Assert.AreEqual(bookAFlight.flightTable.ElementAt(5).Text, test.bookPassengers);
+            Assert.AreEqual(bookAFlight.flightTable.ElementAt(7).Text, test.bookTaxes);
+            Assert.AreEqual(bookAFlight.flightTable.ElementAt(9).Text, test.booktotalPrice);
             bookAFlight.fNamePas1.SendKeys(uInputs.firstNamePas1);
             bookAFlight.lNamePas1.SendKeys(uInputs.lastNamePas1);
             SelectByText(bookAFlight.mealPas1, uInputs.mealPas1);
@@ -81,15 +110,19 @@ namespace newtours.Web
             bookAFlight.cardLName.SendKeys(uInputs.cardLastName);
             bookAFlight.continueB.Click();
         }
-        
-        public void Close()
-        {
-            driver.Quit();
-        }
+
         public static void SelectByText(IWebElement element, String str)
         {
             SelectElement select = new SelectElement(element);
             select.SelectByText(str);
         }
+
+        
+        public void Close()
+        {
+            
+            driver.Quit();
+        }
+       
     }
 }

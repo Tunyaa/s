@@ -19,5 +19,19 @@ namespace newtours.Pages
 
         [FindsBy(How = How.Name, Using = "reserveFlights")]
         public IWebElement continueB { get; set; }
+
+        [FindsBy(How = How.XPath, Using = "//form/table[1]//tr[2]/td[1][@valign='BOTTOM']//font")]
+        public IWebElement departTo { get; set; }
+
+        [FindsBy(How = How.XPath, Using = "//form/table[2]//tr[2]/td[1][@valign='BOTTOM']//font")]
+        public IWebElement returnTo { get; set; }
+
+        [FindsBy(How = How.XPath, Using = "//form/table[1]//tr[2]/td[2][@valign='BOTTOM']//font")]
+        public IWebElement DepatrDate { get; set; }
+
+        [FindsBy(How = How.XPath, Using = "//form/table[2]//tr[2]/td[2][@valign='BOTTOM']//font")]
+        public IWebElement returnDate { get; set; }
+
+        
     }
 }
