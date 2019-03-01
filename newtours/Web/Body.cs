@@ -19,6 +19,8 @@ namespace newtours.Web
             driver.FlightFinder();
 
             driver.FlightSelect();
+
+            driver.BookAFlight();
         }
     }
 }

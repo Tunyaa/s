@@ -5,20 +5,21 @@ using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
-
+using OpenQA.Selenium.Support.UI;
 
 namespace newtours.Pages
 {
     class FlightFinderPage
     {
         public IWebDriver driver;
+        
 
         [FindsBy(How = How.Name, Using = "tripType")]
         public IList<IWebElement> type { get; set; }
 
         [FindsBy(How = How.Name, Using = "passCount")]
         public IWebElement passengers { get; set; }
-
+        
         [FindsBy(How = How.Name, Using = "fromPort")]
         public IWebElement departFrom { get; set; }
 

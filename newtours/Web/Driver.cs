@@ -37,6 +37,7 @@ namespace newtours.Web
         }
         public void FlightFinder()
         {
+            
             var flightFinder = new FlightFinderPage();
             PageFactory.InitElements(driver, flightFinder);
             flightFinder.type.ElementAt(uInputs.type).Click();
@@ -67,6 +68,30 @@ namespace newtours.Web
             flightSelect.flightIn.ElementAt(uInputs.flightIn).Click();
             flightSelect.continueB.Click();
         }
+        public void BookAFlight()
+        {
+            var bookAFlight = new BookAFlight();
+            PageFactory.InitElements(driver, bookAFlight);
+            bookAFlight.fNamePas1.SendKeys(uInputs.firstNamePas1);
+            bookAFlight.lNamePas1.SendKeys(uInputs.lastNamePas1);
+            select = new SelectElement(bookAFlight.mealPas1);
+            select.SelectByText(uInputs.mealPas1);
+            bookAFlight.fNamePas2.SendKeys(uInputs.firstNamePas2);
+            bookAFlight.lNamePas2.SendKeys(uInputs.lastNamePas2);
+            select = new SelectElement(bookAFlight.mealPas2);
+            select.SelectByText(uInputs.mealPas2);
+            select = new SelectElement(bookAFlight.cardType);
+            select.SelectByText(uInputs.cardType);
+            bookAFlight.cardNum.SendKeys(uInputs.cardNumber);
+            select = new SelectElement(bookAFlight.cardDM);
+            select.SelectByText(uInputs.cardExM);
+            select = new SelectElement(bookAFlight.cardDY);
+            select.SelectByText(uInputs.cardExY);
+            bookAFlight.cardFName.SendKeys(uInputs.cardFirstName);
+            bookAFlight.cardMName.SendKeys(uInputs.cardMiddleName);
+            bookAFlight.cardLName.SendKeys(uInputs.cardLastName);
 
+        }
+        
     }
 }

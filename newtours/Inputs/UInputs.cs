@@ -8,6 +8,7 @@ namespace newtours.Inputs
 {
     class UInputs
     {
+
         public String url = "http://newtours.demoaut.com/";
         public String userName = "tutorial";
         public String password = "tutorial";
@@ -36,5 +37,20 @@ namespace newtours.Inputs
         public String cardNumber = "5479540454132487";
         public String cardExM = "05";
         public String cardExY = "2009";
+        public String cardFirstName = "Ivan";
+        public String cardMiddleName = "Ivanovich";
+        public String cardLastName = "Ivanov";
+
+        public String bilAddress = "1085 Borregas Ave.";
+        public String bilCity = "Albuquerque";
+        public String bilState = "New Mexico";
+        public String bilPostCode = "94089";
+        public String bilCountry = "UNITED STATES";
+
+        public String deliAddress = "Same as Billing Address";
+        public String deliCity = "Boston";
+        public String deliState = "Massachusetts";
+        public String deliPostCode = "91089";
+        public String deliCountry = "UNITED STATES";
     }
 }
