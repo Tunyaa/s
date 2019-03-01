@@ -12,6 +12,7 @@ namespace newtours.Pages
     class FlightFinderPage
     {
         public IWebDriver driver;
+
         
 
         [FindsBy(How = How.Name, Using = "tripType")]

@@ -20,5 +20,6 @@ namespace newtours.Pages
 
         [FindsBy(How = How.Name, Using = "login")]
         public IWebElement signIn { get; set; }
+
     }
 }

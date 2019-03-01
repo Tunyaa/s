@@ -1,0 +1,15 @@
+C:\Users\oldca\source\repos\newtours\newtours\bin\Release\newtours.exe.config
+C:\Users\oldca\source\repos\newtours\newtours\bin\Release\newtours.exe
+C:\Users\oldca\source\repos\newtours\newtours\bin\Release\newtours.pdb
+C:\Users\oldca\source\repos\newtours\newtours\bin\Release\nunit.framework.dll
+C:\Users\oldca\source\repos\newtours\newtours\bin\Release\WebDriver.dll
+C:\Users\oldca\source\repos\newtours\newtours\bin\Release\WebDriver.Support.dll
+C:\Users\oldca\source\repos\newtours\newtours\bin\Release\nunit.framework.pdb
+C:\Users\oldca\source\repos\newtours\newtours\bin\Release\nunit.framework.xml
+C:\Users\oldca\source\repos\newtours\newtours\bin\Release\WebDriver.xml
+C:\Users\oldca\source\repos\newtours\newtours\bin\Release\WebDriver.Support.xml
+C:\Users\oldca\source\repos\newtours\newtours\obj\Release\newtours.csprojAssemblyReference.cache
+C:\Users\oldca\source\repos\newtours\newtours\obj\Release\newtours.csproj.CoreCompileInputs.cache
+C:\Users\oldca\source\repos\newtours\newtours\obj\Release\newtours.csproj.CopyComplete
+C:\Users\oldca\source\repos\newtours\newtours\obj\Release\newtours.exe
+C:\Users\oldca\source\repos\newtours\newtours\obj\Release\newtours.pdb

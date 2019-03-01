@@ -13,8 +13,9 @@ namespace newtours.Inputs
         public String userName = "tutorial";
         public String password = "tutorial";
 
+        public String tp = "oneway";
         public int type = 1; //0-1
-        public int passengers = 1; //0-3 
+        public String passengers = "2";  
         public String departFrom = "Paris";
         public String OnMonth = "November";
         public String OnDay = "20";
@@ -52,5 +53,7 @@ namespace newtours.Inputs
         public String deliState = "Massachusetts";
         public String deliPostCode = "91089";
         public String deliCountry = "UNITED STATES";
+
+        public int Price;
     }
 }

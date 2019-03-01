@@ -80,5 +80,9 @@ namespace newtours.Pages
 
         [FindsBy(How = How.Name, Using = "delCountry")]
         public IWebElement delCountru { get; set; }
+
+        [FindsBy(How = How.Name, Using = "buyFlights")]
+        public IWebElement continueB { get; set; }
+        
     }
 }

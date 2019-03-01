@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace newtours.Web
 {
     class Body
@@ -14,6 +15,7 @@ namespace newtours.Web
             Driver driver = new Driver();
             driver.Chrome();
             driver.ChromeUrl();
+            
             driver.Login();
 
             driver.FlightFinder();
@@ -21,6 +23,8 @@ namespace newtours.Web
             driver.FlightSelect();
 
             driver.BookAFlight();
+            
+            driver.Close();
         }
     }
 }
