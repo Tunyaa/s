@@ -20,6 +20,7 @@ namespace newtours.Web
         IWebDriver driver;
         UInputs uInputs = new UInputs();
         TestsInp test = new TestsInp();
+        TestPages testPag = new TestPages();
         SelectElement select;
 
 
@@ -50,7 +51,10 @@ namespace newtours.Web
         {
             var flightFinder = new FlightFinderPage();
             PageFactory.InitElements(driver, flightFinder);
-            Assert.AreEqual(driver.Title, test.findTitle);
+            String str = driver.Title;
+            testPag.Test1(str);
+            testPag.Test2();
+            //Assert.AreEqual(driver.Title, test.findTitle);
             flightFinder.type.ElementAt(uInputs.type).Click();
             SelectByText(flightFinder.passengers, uInputs.passengers);
             SelectByText(flightFinder.departFrom, uInputs.departFrom);
@@ -63,12 +67,14 @@ namespace newtours.Web
             SelectByText(flightFinder.airline, uInputs.airline);
             flightFinder.continueB.Click();
         }
+        
         public void FlightSelect()
         {
             var flightSelect = new SelectFlight();
             PageFactory.InitElements(driver, flightSelect);
+            
             Assert.AreEqual(driver.Title, test.selectTitle);
-            Assert.AreEqual(flightSelect.departTo.Text, test.selectDep);
+            Assert.AreEqual(driver.Title + flightSelect.departTo.Text + flightSelect.DepatrDate.Text + flightSelect.returnTo.Text + flightSelect.returnDate.Text, test.selectTitle + test.selectDep + test.selectDepDate + test.selectRet + test.selectRetDate);
             Assert.AreEqual(flightSelect.DepatrDate.Text, test.selectDepDate);
             Assert.AreEqual(flightSelect.returnTo.Text, test.selectRet);
             Assert.AreEqual(flightSelect.returnDate.Text, test.selectRetDate);
@@ -108,6 +114,24 @@ namespace newtours.Web
             bookAFlight.cardFName.SendKeys(uInputs.cardFirstName);
             bookAFlight.cardMName.SendKeys(uInputs.cardMiddleName);
             bookAFlight.cardLName.SendKeys(uInputs.cardLastName);
+            bookAFlight.bilAddress.Clear();
+            bookAFlight.bilAddress.SendKeys(uInputs.bilAddress);
+            bookAFlight.bilCity.Clear();
+            bookAFlight.bilCity.SendKeys(uInputs.bilCity);
+            bookAFlight.bilState.Clear();
+            bookAFlight.bilState.SendKeys(uInputs.bilState);
+            bookAFlight.bilZip.Clear();
+            bookAFlight.bilZip.SendKeys(uInputs.bilPostCode);
+            SelectByText(bookAFlight.bilCountry, uInputs.bilCountry);
+            bookAFlight.delAddress.Clear();
+            bookAFlight.delAddress.SendKeys(uInputs.deliAddress);
+            bookAFlight.delCity.Clear();
+            bookAFlight.delCity.SendKeys(uInputs.deliCity);
+            bookAFlight.delState.Clear();
+            bookAFlight.delState.SendKeys(uInputs.deliState);
+            bookAFlight.delZip.Clear();
+            bookAFlight.delZip.SendKeys(uInputs.deliPostCode);
+            SelectByText(bookAFlight.delCountry, uInputs.deliCountry);
             bookAFlight.continueB.Click();
         }
 

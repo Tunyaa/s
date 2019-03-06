@@ -9,7 +9,7 @@ namespace newtours.Web
 {
     class Body
     {
-        [Test]
+        
         public void Run()
         {
             Driver driver = new Driver();

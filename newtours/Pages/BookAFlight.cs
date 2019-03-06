@@ -64,7 +64,7 @@ namespace newtours.Pages
         public IWebElement bilZip { get; set; }
 
         [FindsBy(How = How.Name, Using = "billCountry")]
-        public IWebElement delCountry { get; set; }
+        public IWebElement bilCountry { get; set; }
 
         [FindsBy(How = How.Name, Using = "delAddress1")]
         public IWebElement delAddress { get; set; }
@@ -79,7 +79,7 @@ namespace newtours.Pages
         public IWebElement delZip { get; set; }
 
         [FindsBy(How = How.Name, Using = "delCountry")]
-        public IWebElement delCountru { get; set; }
+        public IWebElement delCountry { get; set; }
 
         [FindsBy(How = How.Name, Using = "buyFlights")]
         public IWebElement continueB { get; set; }
@@ -87,7 +87,7 @@ namespace newtours.Pages
         [FindsBy(How = How.XPath, Using = "//*[@class='frame_header_info']/b")]
         public IList<IWebElement> depTo { get; set; }
 
-        [FindsBy(How = How.ClassName, Using = "data_left")]//1/2/4\ pas6\tax8\pric10
+        [FindsBy(How = How.ClassName, Using = "data_left")]
         public IList<IWebElement> flightTable { get; set; }
 
         [FindsBy(How = How.ClassName, Using = "data_center_mono")]
